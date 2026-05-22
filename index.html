@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المشروع التدريبي | حجز مواعيد طبية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">عيادة الشفاء</div>
+        <ul class="nav-links">
+            <li><a href="#developer">المطور</a></li>
+            <li><a href="#booking">نظام الحجز</a></li>
+        </ul>
+    </nav>
+
+    <section id="developer" class="developer-section">
+        <div class="dev-card">
+            <h2>معلومات مطور النظام</h2>
+            <p><strong>اسم الطالب:</strong> فارس غبن</p>
+            <p><strong>التخصص:</strong> هندسة البرمجيات</p>
+            <p><strong>وصف مختصر:</strong> هذا المشروع عبارة عن نظام مصغر لحجز المواعيد الطبية، تم بناؤه لتطبيق مهارات إدارة المشاريع باستخدام Git و GitHub للتدريب الميداني بشكل متجاوب.</p>
+        </div>
+    </section>
+
+    <main id="booking" class="container">
+        <div class="booking-container">
+            <h2>نظام حجز المواعيد الطبية</h2>
+            <form id="bookingForm">
+                <label for="patientName">اسم المريض:</label>
+                <input type="text" id="patientName" required placeholder="أدخل اسمك الكامل">
+
+                <label for="clinic">اختر العيادة:</label>
+                <select id="clinic" required>
+                    <option value="">-- اختر العيادة --</option>
+                    <option value="الأسنان">عيادة الأسنان</option>
+                    <option value="الأطفال">عيادة الأطفال</option>
+                    <option value="القلب">عيادة القلب</option>
+                </select>
+
+                <label for="bookingDate">تاريخ الحجز:</label>
+                <input type="date" id="bookingDate" required>
+
+                <button type="submit">تأكيد الحجز المبدئي</button>
+            </form>
+            <div id="message" class="hidden"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>جميع الحقوق محفوظة © 2026 | تطوير الطالب فارس</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
